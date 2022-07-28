@@ -1,0 +1,16 @@
+TERMUX_PKG_HOMEPAGE="http://www.gprolog.org"
+TERMUX_PKG_DESCRIPTION="GNU Prolog compiler"
+TERMUX_PKG_LICENSE="LGPL-3.0, GPL-2.0"
+TERMUX_PKG_LICENSE_FILE="COPYING"
+TERMUX_PKG_MAINTAINER="@termux"
+TERMUX_PKG_VERSION="1.5.0"
+TERMUX_PKG_SRCURL="http://www.gprolog.org/gprolog-$TERMUX_PKG_VERSION.tar.gz"
+TERMUX_PKG_SHA256=670642b43c0faa27ebd68961efb17ebe707688f91b6809566ddd606139512c01
+TERMUX_PKG_BUILD_IN_SRC=true
+#TERMUX_PKG_DEPENDS=""
+
+termux_step_pre_configure() {
+    cd src
+    ./configure
+    TERMUX_PKG_SRCDIR+="/src"
+}
