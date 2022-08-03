@@ -1,0 +1,9 @@
+TERMUX_PKG_HOMEPAGE="https://hackage.haskell.org/package/haskell-language-server"
+TERMUX_PKG_DESCRIPTION="LSP server for GHC"
+TERMUX_PKG_LICENSE="Apache-2.0"
+TERMUX_PKG_MAINTAINER="@termux"
+TERMUX_PKG_VERSION="1.7.0.0"
+TERMUX_PKG_SRCURL="https://hackage.haskell.org/package/haskell-language-server-${TERMUX_PKG_VERSION}/haskell-language-server-${TERMUX_PKG_VERSION}.tar.gz"
+TERMUX_PKG_SHA256=6e383507f516bee6751220e1de74e79aa2998febcc78f3225106d17d64c9addc
+TERMUX_PKG_BUILD_IN_SRC=true
+TERMUX_PKG_DEPENDS="ghc-libs, haskell-aeson, haskell-async, haskell-base16-bytestring"
