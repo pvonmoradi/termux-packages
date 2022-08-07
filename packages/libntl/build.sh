@@ -10,8 +10,7 @@ TERMUX_PKG_SRCURL="https://libntl.org/ntl-$TERMUX_PKG_VERSION.tar.gz"
 TERMUX_PKG_SHA256=210d06c31306cbc6eaf6814453c56c776d9d8e8df36d74eb306f6a523d1c6a8a
 TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_BUILD_DEPENDS="perl"
-TERMUX_PKG_DEPENDS="libgmp"
-# TERMUX_PKG_DEPENDS="libgf2x, libgmp"
+TERMUX_PKG_DEPENDS="libgf2x, libgmp"
 
 termux_step_configure() {
     cd src
