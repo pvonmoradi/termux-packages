@@ -1,0 +1,26 @@
+diff --git a/Makefile b/Makefile
+index ca788ad..6879e27 100644
+--- a/Makefile
++++ b/Makefile
+@@ -4,7 +4,7 @@
+ # == CHANGE THE SETTINGS BELOW TO SUIT YOUR ENVIRONMENT =======================
+ 
+ # Your platform. See PLATS for possible values.
+-PLAT= mingw
++PLAT= linux
+ 
+ # Where to install. The installation starts in the src and doc directories,
+ # so take care if INSTALL_TOP is not an absolute path. See the local target.
+diff --git a/src/Makefile b/src/Makefile
+index 0185209..9a5ecdb 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -4,7 +4,7 @@
+ # == CHANGE THE SETTINGS BELOW TO SUIT YOUR ENVIRONMENT =======================
+ 
+ # Your platform. See PLATS for possible values.
+-PLAT= mingw
++PLAT= linux-readline
+ 
+ CXX= g++ -std=c++17 -O3 -flto
+ CXXFLAGS= -Wall -Wextra -DLUA_COMPAT_5_3 $(SYSCFLAGS) $(MYCFLAGS)
