@@ -8,12 +8,12 @@ TERMUX_PKG_SRCURL="http://downloads.sourceforge.net/tinyxml/tinyxml_${TERMUX_PKG
 TERMUX_PKG_SHA256=15bdfdcec58a7da30adc87ac2b078e4417dbe5392f3afb719f9ba6d062645593
 TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_DEPENDS="libc++"
-TERMUX_PKG_BLACKLISTED_ARCHES="aarch64, arm, i686"
+# TERMUX_PKG_BLACKLISTED_ARCHES="aarch64, arm, i686"
 
 termux_step_pre_configure() {
     sed -i Makefile \
         -e '/^TINYXML_USE_STL/ s|=.*|=YES|' \
-        -e "s|^RELEASE_CFLAGS.*|& ${CXXFLAGS/-Oz/-Os} -fPIC|"
+        -e "s|^RELEASE_CFLAGS.*|& ${CXXFLAGS/-Oz/-O3} -fPIC|"
 }
 
 termux_step_make() {
