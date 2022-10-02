@@ -1,0 +1,14 @@
+TERMUX_PKG_HOMEPAGE="https://github.com/foonathan/memory"
+TERMUX_PKG_DESCRIPTION="STL compatible C++ memory allocator library using a new RawAllocator concept"
+TERMUX_PKG_LICENSE="ZLIB"
+TERMUX_PKG_MAINTAINER="Pooya Moradi <pvonmoradi@gmail.com>"
+TERMUX_PKG_VERSION="0.7-2"
+TERMUX_PKG_SRCURL="https://github.com/foonathan/memory/archive/refs/tags/v$TERMUX_PKG_VERSION.tar.gz"
+TERMUX_PKG_SHA256=8aba7211bb0e59b7538decda453e492cc6e36f8781508ed92b38cbafe8a48762
+TERMUX_PKG_AUTO_UPDATE=true
+TERMUX_PKG_DEPENDS="libc++"
+TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
+-DFOONATHAN_MEMORY_BUILD_EXAMPLES=OFF
+-DFOONATHAN_MEMORY_BUILD_TESTS=OFF
+-DFOONATHAN_MEMORY_BUILD_TOOLS=OFF
+"
