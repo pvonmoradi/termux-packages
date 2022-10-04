@@ -1,0 +1,10 @@
+TERMUX_PKG_HOMEPAGE="https://github.com/carp-lang/Carp"
+TERMUX_PKG_DESCRIPTION="A statically typed lisp, without a GC, for real-time applications"
+TERMUX_PKG_LICENSE="Apache-2.0"
+TERMUX_PKG_MAINTAINER="@termux"
+TERMUX_PKG_VERSION="0.5.5"
+TERMUX_PKG_SRCURL="https://github.com/carp-lang/Carp/archive/refs/tags/v$TERMUX_PKG_VERSION.tar.gz"
+TERMUX_PKG_SHA256=e530a310beb2694b24ded6eb68d7f86f6922888a205f6812cc9b8f64c9055b25
+TERMUX_PKG_BUILD_IN_SRC=true
+TERMUX_PKG_DEPENDS="ghc-libs"
+TERMUX_PKG_IS_HASKELL_LIB=false
