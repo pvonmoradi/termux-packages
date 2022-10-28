@@ -1,0 +1,17 @@
+diff --git a/configure.ac b/configure.ac
+index 5dabac65..83d9fe74 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -154,9 +154,9 @@ AS_IF([test x$lisp_ansic != xyes],
+   [lisp_thread=yes])
+ 
+ ## library
+-library="-lm"
+-AS_IF([test x$lisp_thread = xyes -a x$lisp_windows != xyes],
+-  [library="$library -lpthread"])
++# library="-lm"
++# AS_IF([test x$lisp_thread = xyes -a x$lisp_windows != xyes],
++#   [library="$library -lpthread"])
+ AS_IF([test x$lisp_readline = xyes],
+   [library="$library -lreadline"])
+ AS_IF([test x$lisp_editline = xyes],
